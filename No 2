@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package uts_no2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author FARIZ
+ */
+public class UTS_No2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+        // No 2
+        Scanner inputObjk=new Scanner(System.in);
+        int Bilangan;
+        int positif=0;
+        int negatif=0;
+        float total=0;
+        float jumlah=0;
+        System.out.println("Masukkan bilangan integer, program akan berhenti jika memasukan nilai 0: ");
+        do{
+               Bilangan=inputObjk.nextInt();
+                if(Bilangan>0){
+                positif++;
+                total=total+Bilangan;
+                jumlah++;
+            }
+            if(Bilangan<0){
+               negatif++; 
+                total=total+Bilangan;
+                jumlah++;
+            }
+        } while(Bilangan!=0); 
+        System.out.println("Jumlah Bilangan Positif Adalah : "+positif);
+        System.out.println("Jumlah bilangan negatif adalah : "+negatif);
+        System.out.println("Nilai total adalah : "+total);
+        System.out.println("Nilai rata - rata : "+total/jumlah);
+    }
+    
+}
