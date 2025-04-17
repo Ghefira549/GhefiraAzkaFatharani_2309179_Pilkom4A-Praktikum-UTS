@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package uts;
+
+import java.util.Random;
+import java.util.Scanner;
+/**
+ *
+ * @author FARIZ
+ */
+public class UTS {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // No 1
+        String[] namaBulan={
+            "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+            "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+        };
+        Random angka=new Random();
+        int angkaAcak=angka.nextInt(12)+1;
+        System.out.println(angkaAcak+":"+namaBulan[angkaAcak-1]);
+      
+        
+    }
+    
+}
