@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package uts_no4;
+
+/**
+ *
+ * @author FARIZ
+ */
+public class UTS_NO4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      double luasAlas=1;
+      double luasSelubungLimas=1;
+      double tinggi=1;
+      
+      LimasSegiEmpat LimasSegiEmpat1 = new LimasSegiEmpat();
+        System.out.println("Limas segi empat dengan luas alas:"+luasAlas+", luas selubung limas :"+luasSelubungLimas+
+                " dan tinggi:"+tinggi+" Luasnya:"+LimasSegiEmpat1.getLuas(luasAlas,luasSelubungLimas)+" Sedangkan Volumenya: "
+                        + ""+LimasSegiEmpat1.getVolume(luasAlas, tinggi));
+        
+        LimasSegiEmpat LimasSegiEmpat2 = new LimasSegiEmpat(30, 40, 50);
+        System.out.println("Limas segi empat dengan luas alas:"+LimasSegiEmpat2.getLuasAlas()+", "
+                + "luas selubung limas :"+LimasSegiEmpat2.getLuasSelubungLimas()+
+                " dan tinggi:"+LimasSegiEmpat2.getTinggi()+" Luasnya:"+LimasSegiEmpat2.getLuas(LimasSegiEmpat2.getLuasAlas(),
+                        LimasSegiEmpat2.getLuasSelubungLimas())+
+                " Sedangkan Volumenya: "+LimasSegiEmpat2.getVolume(LimasSegiEmpat2.getLuasAlas(), LimasSegiEmpat2.getTinggi()));
+        
+        LimasSegiEmpat LimasSegiEmpat3 = new LimasSegiEmpat();
+        LimasSegiEmpat3.setLuasAlas(25);
+        LimasSegiEmpat3.setLuasSelubungLimas(35);
+        LimasSegiEmpat3.setTinggi(45);
+        System.out.println("Limas segi empat dengan luas alas:"+LimasSegiEmpat3.getLuasAlas()+", luas selubung limas :"
+                +LimasSegiEmpat3.getLuasSelubungLimas()+" dan tinggi:"+LimasSegiEmpat3.getTinggi()+" Luasnya:"
+                +LimasSegiEmpat3.getLuas(LimasSegiEmpat3.getLuasAlas(), LimasSegiEmpat3.getLuasSelubungLimas())+
+                " Sedangkan Volumenya: "+LimasSegiEmpat3.getVolume(LimasSegiEmpat3.getLuasAlas(), LimasSegiEmpat3.getTinggi()));
+    }
+    
+}
